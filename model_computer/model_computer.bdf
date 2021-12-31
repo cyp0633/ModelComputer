@@ -19,7 +19,7 @@ Intel and sold by Intel or its authorized distributors.  Please
 refer to the applicable agreement for further details, at
 https://fpgasoftware.intel.com/eula.
 */
-(header "graphic" (version "1.4"))
+(header "graphic" (version "1.3"))
 (pin
 	(input)
 	(rect -88 -48 80 -32)
