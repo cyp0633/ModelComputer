@@ -1,5 +1,5 @@
 Flow report for model_computer
-Fri Dec 31 10:37:55 2021
+Fri Dec 31 12:32:35 2021
 Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
 
 
@@ -38,23 +38,23 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Fri Dec 31 10:37:55 2021        ;
+; Flow Status                        ; Successful - Fri Dec 31 12:32:35 2021        ;
 ; Quartus II Version                 ; 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition ;
 ; Revision Name                      ; model_computer                               ;
 ; Top-level Entity Name              ; model_computer                               ;
 ; Family                             ; Cyclone II                                   ;
+; Device                             ; EP2C5T144C8                                  ;
+; Timing Models                      ; Final                                        ;
 ; Met timing requirements            ; Yes                                          ;
-; Total logic elements               ; 261 / 4,608 ( 6 % )                          ;
-;     Total combinational functions  ; 261 / 4,608 ( 6 % )                          ;
+; Total logic elements               ; 263 / 4,608 ( 6 % )                          ;
+;     Total combinational functions  ; 263 / 4,608 ( 6 % )                          ;
 ;     Dedicated logic registers      ; 43 / 4,608 ( < 1 % )                         ;
 ; Total registers                    ; 43                                           ;
-; Total pins                         ; 100 / 158 ( 63 % )                           ;
+; Total pins                         ; 76 / 89 ( 85 % )                             ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 2,048 / 119,808 ( 2 % )                      ;
 ; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                               ;
 ; Total PLLs                         ; 0 / 2 ( 0 % )                                ;
-; Device                             ; EP2C5F256C6                                  ;
-; Timing Models                      ; Final                                        ;
 +------------------------------------+----------------------------------------------+
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/31/2021 10:37:48 ;
+; Start date & time ; 12/31/2021 12:32:29 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; model_computer      ;
 +-------------------+---------------------+
@@ -74,7 +74,9 @@ applicable agreement for further details.
 +-------------------------------------+------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                        ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 345052807169.164091826808996 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 345052807169.164092514912312 ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                           ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                            ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; 16764057                     ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING        ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                       ; --            ; --          ; Top        ;
@@ -86,11 +88,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 237 MB              ; 00:00:02                           ;
-; Fitter                  ; 00:00:01     ; 1.0                     ; 235 MB              ; 00:00:01                           ;
-; Assembler               ; 00:00:01     ; 1.0                     ; 204 MB              ; 00:00:00                           ;
+; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 236 MB              ; 00:00:02                           ;
+; Fitter                  ; 00:00:02     ; 1.0                     ; 234 MB              ; 00:00:01                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 204 MB              ; 00:00:00                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 170 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:04     ; --                      ; --                  ; 00:00:03                           ;
+; Total                   ; 00:00:03     ; --                      ; --                  ; 00:00:03                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
