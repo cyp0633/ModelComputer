@@ -38,6 +38,13 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
+		(pt 0 64)
+		(input)
+		(text "sm" (rect 0 0 15 12)(font "Arial" ))
+		(text "sm" (rect 21 59 36 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
 		(pt 168 32)
 		(output)
 		(text "outdata[7..0]" (rect 0 0 62 12)(font "Arial" ))
