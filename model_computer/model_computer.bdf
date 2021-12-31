@@ -86,6 +86,22 @@ applicable agreement for further details.
 	)
 	(annotation_block (location)(rect 1184 240 1240 352))
 )
+(pin
+	(output)
+	(rect 664 456 840 472)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "ins_dbg[7..0]" (rect 90 0 153 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
 (symbol
 	(rect 1024 96 1176 208)
 	(text "IR" (rect 5 0 16 12)(font "Arial" ))
@@ -1031,7 +1047,7 @@ applicable agreement for further details.
 		(type "PARAMETER_STRING")	)
 	(parameter
 		"LPM_FILE"
-		"\"./standard_test.mif\""
+		"\"./board_test.mif\""
 		"File containing initial contents of memory array"
 		(type "PARAMETER_STRING")	)
 	(parameter
@@ -1756,12 +1772,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "ir[7..0]" (rect 1111 112 1158 121)(font "Intel Clear" ))
-	(pt 1176 128)
-	(pt 1336 128)
-	(bus)
-)
-(connector
 	(pt 136 120)
 	(pt 288 120)
 	(bus)
@@ -1780,6 +1790,18 @@ applicable agreement for further details.
 (connector
 	(pt 992 232)
 	(pt 1008 232)
+	(bus)
+)
+(connector
+	(text "ir[7..0]" (rect 1175 112 1222 121)(font "Intel Clear" ))
+	(pt 1176 128)
+	(pt 1336 128)
+	(bus)
+)
+(connector
+	(text "ir[7..0]" (rect 584 448 615 460)(font "Arial" ))
+	(pt 664 464)
+	(pt 576 464)
 	(bus)
 )
 (junction (pt 160 312))
