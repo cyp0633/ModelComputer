@@ -125,8 +125,8 @@ VCCIO4                       : 54        : power  :                   : 3.3V    
 GND*                         : 55        :        :                   :         : 4         :                
 GND                          : 56        : gnd    :                   :         :           :                
 GND*                         : 57        :        :                   :         : 4         :                
-GND*                         : 58        :        :                   :         : 4         :                
-GND*                         : 59        :        :                   :         : 4         :                
+startkey                     : 58        : input  : 3.3-V LVTTL       :         : 4         : Y              
+pausekey                     : 59        : input  : 3.3-V LVTTL       :         : 4         : Y              
 indata[0]                    : 60        : input  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : 61        : gnd    :                   :         :           :                
 VCCINT                       : 62        : power  :                   : 1.2V    :           :                

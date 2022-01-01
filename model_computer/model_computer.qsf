@@ -72,6 +72,9 @@ set_location_assignment PIN_112 -to outdata[3]
 set_location_assignment PIN_104 -to outdata[2]
 set_location_assignment PIN_103 -to outdata[1]
 set_location_assignment PIN_101 -to outdata[0]
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE model_computer.vwf
+set_location_assignment PIN_48 -to resume
+set_global_assignment -name VERILOG_FILE ../AdditionalModules/StartCtrl.v
 set_global_assignment -name MIF_FILE board_test.mif
 set_global_assignment -name MIF_FILE standard_test.mif
 set_global_assignment -name VERILOG_FILE ../SM/SM.v
@@ -86,5 +89,5 @@ set_global_assignment -name VERILOG_FILE ../control_signal/control_signal.v
 set_global_assignment -name VERILOG_FILE ../ALU/ALU2.v
 set_global_assignment -name BDF_FILE model_computer.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE model_computer.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE model_computer.vwf
-set_location_assignment PIN_48 -to resume
+set_location_assignment PIN_58 -to startkey
+set_location_assignment PIN_59 -to pausekey

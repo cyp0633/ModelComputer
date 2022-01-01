@@ -71,6 +71,38 @@ applicable agreement for further details.
 	(annotation_block (location)(rect -136 0 -88 16))
 )
 (pin
+	(input)
+	(rect -104 488 64 504)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "startkey" (rect 5 0 46 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -104 504 64 520)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "pausekey" (rect 5 0 53 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 1008 224 1184 240)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -1105,6 +1137,85 @@ applicable agreement for further details.
 		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
 	)
 )
+(symbol
+	(rect 112 448 240 544)
+	(text "StartCtrl" (rect 5 0 46 12)(font "Arial" ))
+	(text "inst12" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "startkey" (rect 0 0 41 12)(font "Arial" ))
+		(text "startkey" (rect 21 43 62 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pausekey" (rect 0 0 48 12)(font "Arial" ))
+		(text "pausekey" (rect 21 59 69 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "clken" (rect 0 0 25 12)(font "Arial" ))
+		(text "clken" (rect 82 27 107 39)(font "Arial" ))
+		(line (pt 128 32)(pt 112 32)(line_width 1))
+	)
+	(parameter
+		"INIT"
+		"0"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"EN"
+		"1"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 112 80)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 112 400 288 448))
+)
+(symbol
+	(rect 288 464 352 512)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst13" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32)(line_width 1))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12)(line_width 1))
+		(line (pt 14 37)(pt 31 37)(line_width 1))
+		(line (pt 14 12)(pt 14 37)(line_width 1))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
+	)
+)
 (connector
 	(pt 904 136)
 	(pt 912 136)
@@ -1171,11 +1282,6 @@ applicable agreement for further details.
 	(pt 704 168)
 )
 (connector
-	(text "clk" (rect 714 104 731 113)(font "Intel Clear" ))
-	(pt 776 120)
-	(pt 696 120)
-)
-(connector
 	(text "madd[1..0]" (rect 231 80 290 89)(font "Intel Clear" ))
 	(pt 240 104)
 	(pt 288 104)
@@ -1213,11 +1319,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "clk" (rect -64 136 -47 145)(font "Intel Clear" ))
-	(pt -16 152)
-	(pt -72 152)
-)
-(connector
 	(text "pc_ld" (rect -72 104 -43 113)(font "Intel Clear" ))
 	(pt -16 120)
 	(pt -80 120)
@@ -1249,11 +1350,6 @@ applicable agreement for further details.
 	(text "reg_en" (rect -135 280 -100 289)(font "Intel Clear" ))
 	(pt -136 296)
 	(pt -72 296)
-)
-(connector
-	(text "clk" (rect -112 296 -95 305)(font "Intel Clear" ))
-	(pt -136 312)
-	(pt -72 312)
 )
 (connector
 	(pt 176 296)
@@ -1292,11 +1388,6 @@ applicable agreement for further details.
 	(pt 960 144)
 )
 (connector
-	(text "clk" (rect 991 112 1008 121)(font "Intel Clear" ))
-	(pt 1024 128)
-	(pt 960 128)
-)
-(connector
 	(pt 1640 304)
 	(pt 1584 304)
 )
@@ -1329,11 +1420,6 @@ applicable agreement for further details.
 (connector
 	(pt 1640 416)
 	(pt 1608 416)
-)
-(connector
-	(text "clk" (rect 1424 424 1441 433)(font "Intel Clear" ))
-	(pt 1456 440)
-	(pt 1416 440)
 )
 (connector
 	(text "ra[1..0]" (rect 1848 96 1895 105)(font "Intel Clear" ))
@@ -1425,11 +1511,6 @@ applicable agreement for further details.
 	(pt 1888 368)
 )
 (connector
-	(text "clk" (rect 88 -56 105 -47)(font "Intel Clear" ))
-	(pt 80 -40)
-	(pt 160 -40)
-)
-(connector
 	(text "inputdata[7..0]" (rect 88 -40 176 -31)(font "Intel Clear" ))
 	(pt 80 -24)
 	(pt 160 -24)
@@ -1496,11 +1577,6 @@ applicable agreement for further details.
 	(text "out_en" (rect 1848 384 1883 393)(font "Intel Clear" ))
 	(pt 1840 400)
 	(pt 1872 400)
-)
-(connector
-	(text "clk" (rect 960 312 977 321)(font "Intel Clear" ))
-	(pt 1000 328)
-	(pt 952 328)
 )
 (connector
 	(text "cfen" (rect 960 328 983 337)(font "Intel Clear" ))
@@ -1717,14 +1793,78 @@ applicable agreement for further details.
 	(pt 1128 344)
 	(pt 1168 344)
 )
+(connector
+	(text "clkin" (rect 88 -56 117 -47)(font "Intel Clear" ))
+	(pt 80 -40)
+	(pt 160 -40)
+)
+(connector
+	(text "clkin" (rect 72 464 94 476)(font "Arial" ))
+	(pt 112 480)
+	(pt 64 480)
+)
+(connector
+	(pt 288 480)
+	(pt 240 480)
+)
+(connector
+	(text "clkin" (rect 256 480 278 492)(font "Arial" ))
+	(pt 288 496)
+	(pt 248 496)
+)
+(connector
+	(text "startkey" (rect 72 480 113 492)(font "Arial" ))
+	(pt 112 496)
+	(pt 64 496)
+)
+(connector
+	(text "pausekey" (rect 72 496 120 508)(font "Arial" ))
+	(pt 112 512)
+	(pt 64 512)
+)
+(connector
+	(text "clkout" (rect 360 472 389 484)(font "Arial" ))
+	(pt 352 488)
+	(pt 424 488)
+)
+(connector
+	(text "clkout" (rect -64 136 -29 145)(font "Intel Clear" ))
+	(pt -16 152)
+	(pt -72 152)
+)
+(connector
+	(text "clkout" (rect -112 296 -77 305)(font "Intel Clear" ))
+	(pt -136 312)
+	(pt -72 312)
+)
+(connector
+	(text "clkout" (rect 960 312 995 321)(font "Intel Clear" ))
+	(pt 1000 328)
+	(pt 952 328)
+)
+(connector
+	(text "clkout" (rect 991 112 1026 121)(font "Intel Clear" ))
+	(pt 1024 128)
+	(pt 960 128)
+)
+(connector
+	(text "clkout" (rect 714 104 749 113)(font "Intel Clear" ))
+	(pt 776 120)
+	(pt 696 120)
+)
+(connector
+	(text "clkout" (rect 1424 424 1459 433)(font "Intel Clear" ))
+	(pt 1456 440)
+	(pt 1416 440)
+)
 (junction (pt 160 312))
 (junction (pt 176 296))
 (junction (pt 1336 128))
 (junction (pt 912 160))
 (junction (pt 912 216))
 (junction (pt 912 232))
-(text "Data coming from Register" (rect 344 448 521 459)(font "Intel Clear" (font_size 8)))
 (text "Cf and Zf enabled only" (rect 712 384 867 395)(font "Intel Clear" (font_size 8)))
 (text "when en=1" (rect 712 400 775 411)(font "Intel Clear" (font_size 8)))
 (text "RAA - S" (rect -120 416 -71 427)(font "Intel Clear" (font_size 8)))
 (text "RWBA - D + WRITE" (rect -120 432 -7 443)(font "Intel Clear" (font_size 8)))
+(text "Control start/stop of the circuit" (rect -64 528 108 542)(font "Arial" (font_size 8)))
