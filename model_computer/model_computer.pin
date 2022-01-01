@@ -146,7 +146,7 @@ GND*                         : 75        :        :                   :         
 ~LVDS41p/nCEO~               : 76        : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : 77        : power  :                   : 3.3V    : 3         :                
 GND                          : 78        : gnd    :                   :         :           :                
-GND*                         : 79        :        :                   :         : 3         :                
+select_digit                 : 79        : input  : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : 80        :        :                   :         : 3         :                
 GND*                         : 81        :        :                   :         : 3         :                
 nSTATUS                      : 82        :        :                   :         : 3         :                
@@ -200,15 +200,15 @@ GND*                         : 129       :        :                   :         
 GND                          : 130       : gnd    :                   :         :           :                
 VCCINT                       : 131       : power  :                   : 1.2V    :           :                
 GND*                         : 132       :        :                   :         : 2         :                
-GND*                         : 133       :        :                   :         : 2         :                
-GND*                         : 134       :        :                   :         : 2         :                
-GND*                         : 135       :        :                   :         : 2         :                
-GND*                         : 136       :        :                   :         : 2         :                
-GND*                         : 137       :        :                   :         : 2         :                
+digitout[7]                  : 133       : output : 3.3-V LVTTL       :         : 2         : Y              
+digitout[6]                  : 134       : output : 3.3-V LVTTL       :         : 2         : Y              
+digitout[5]                  : 135       : output : 3.3-V LVTTL       :         : 2         : Y              
+digitout[4]                  : 136       : output : 3.3-V LVTTL       :         : 2         : Y              
+digitout[3]                  : 137       : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 138       : power  :                   : 3.3V    : 2         :                
-GND*                         : 139       :        :                   :         : 2         :                
+digitout[2]                  : 139       : output : 3.3-V LVTTL       :         : 2         : Y              
 GND                          : 140       : gnd    :                   :         :           :                
-GND*                         : 141       :        :                   :         : 2         :                
-GND*                         : 142       :        :                   :         : 2         :                
+digitout[1]                  : 141       : output : 3.3-V LVTTL       :         : 2         : Y              
+digitout[0]                  : 142       : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : 143       :        :                   :         : 2         :                
 GND*                         : 144       :        :                   :         : 2         :                

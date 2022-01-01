@@ -91,3 +91,12 @@ set_global_assignment -name BDF_FILE model_computer.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE model_computer.vwf
 set_location_assignment PIN_58 -to startkey
 set_location_assignment PIN_59 -to pausekey
+set_global_assignment -name VERILOG_FILE ../AdditionalModules/StateDisplay.v
+set_location_assignment PIN_133 -to digitout[7]
+set_location_assignment PIN_134 -to digitout[6]
+set_location_assignment PIN_135 -to digitout[5]
+set_location_assignment PIN_136 -to digitout[4]
+set_location_assignment PIN_137 -to digitout[3]
+set_location_assignment PIN_139 -to digitout[2]
+set_location_assignment PIN_141 -to digitout[1]
+set_location_assignment PIN_142 -to digitout[0]
