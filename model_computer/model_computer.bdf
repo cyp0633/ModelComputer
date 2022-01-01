@@ -1131,18 +1131,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 176 416)
-	(pt 344 416)
-	(bus)
-)
-(connector
 	(pt 408 312)
 	(pt 440 312)
-)
-(connector
-	(pt 160 432)
-	(pt 344 432)
-	(bus)
 )
 (connector
 	(pt 664 264)
@@ -1213,11 +1203,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 176 296)
-	(pt 176 416)
-	(bus)
-)
-(connector
 	(pt 288 152)
 	(pt 160 152)
 	(bus)
@@ -1225,11 +1210,6 @@ applicable agreement for further details.
 (connector
 	(pt 160 152)
 	(pt 160 312)
-	(bus)
-)
-(connector
-	(pt 160 312)
-	(pt 160 432)
 	(bus)
 )
 (connector
@@ -1445,26 +1425,6 @@ applicable agreement for further details.
 	(pt 1888 368)
 )
 (connector
-	(pt 512 152)
-	(pt 496 152)
-	(bus)
-)
-(connector
-	(pt 496 152)
-	(pt 496 104)
-	(bus)
-)
-(connector
-	(pt 480 104)
-	(pt 496 104)
-	(bus)
-)
-(connector
-	(pt 496 104)
-	(pt 776 104)
-	(bus)
-)
-(connector
 	(text "clk" (rect 88 -56 105 -47)(font "Intel Clear" ))
 	(pt 80 -40)
 	(pt 160 -40)
@@ -1479,10 +1439,6 @@ applicable agreement for further details.
 	(pt 912 136)
 	(pt 912 160)
 	(bus)
-)
-(connector
-	(pt 1632 472)
-	(pt 1608 472)
 )
 (connector
 	(text "xl" (rect 714 136 725 145)(font "Intel Clear" ))
@@ -1590,10 +1546,6 @@ applicable agreement for further details.
 	(pt 1608 440)
 )
 (connector
-	(pt 1608 440)
-	(pt 1608 472)
-)
-(connector
 	(text "sm" (rect 1577 424 1588 433)(font "Intel Clear" ))
 	(pt 1576 440)
 	(pt 1608 440)
@@ -1680,10 +1632,6 @@ applicable agreement for further details.
 	(pt 1560 336)
 )
 (connector
-	(pt 1520 352)
-	(pt 1552 352)
-)
-(connector
 	(text "sm" (rect 1312 96 1323 105)(font "Intel Clear" ))
 	(pt 1304 112)
 	(pt 1360 112)
@@ -1692,40 +1640,6 @@ applicable agreement for further details.
 	(text "resume" (rect 88 -24 123 -15)(font "Intel Clear" ))
 	(pt 80 -8)
 	(pt 160 -8)
-)
-(connector
-	(pt 1144 296)
-	(pt 1136 296)
-)
-(connector
-	(pt 1136 296)
-	(pt 1136 328)
-)
-(connector
-	(pt 1128 328)
-	(pt 1136 328)
-)
-(connector
-	(text "c" (rect 1136 312 1141 321)(font "Intel Clear" ))
-	(pt 1136 328)
-	(pt 1168 328)
-)
-(connector
-	(pt 1152 376)
-	(pt 1136 376)
-)
-(connector
-	(pt 1136 376)
-	(pt 1136 344)
-)
-(connector
-	(pt 1128 344)
-	(pt 1136 344)
-)
-(connector
-	(text "z" (rect 1136 328 1141 337)(font "Intel Clear" ))
-	(pt 1136 344)
-	(pt 1168 344)
 )
 (connector
 	(pt 1456 456)
@@ -1783,16 +1697,32 @@ applicable agreement for further details.
 	(pt 1336 128)
 	(bus)
 )
+(connector
+	(pt 480 104)
+	(pt 776 104)
+	(bus)
+)
+(connector
+	(text "halt" (rect 1531 336 1548 348)(font "Arial" ))
+	(pt 1520 352)
+	(pt 1552 352)
+)
+(connector
+	(text "c" (rect 1136 312 1141 321)(font "Intel Clear" ))
+	(pt 1128 328)
+	(pt 1168 328)
+)
+(connector
+	(text "z" (rect 1136 328 1141 337)(font "Intel Clear" ))
+	(pt 1128 344)
+	(pt 1168 344)
+)
 (junction (pt 160 312))
 (junction (pt 176 296))
 (junction (pt 1336 128))
-(junction (pt 496 104))
 (junction (pt 912 160))
 (junction (pt 912 216))
 (junction (pt 912 232))
-(junction (pt 1608 440))
-(junction (pt 1136 328))
-(junction (pt 1136 344))
 (text "Data coming from Register" (rect 344 448 521 459)(font "Intel Clear" (font_size 8)))
 (text "Cf and Zf enabled only" (rect 712 384 867 395)(font "Intel Clear" (font_size 8)))
 (text "when en=1" (rect 712 400 775 411)(font "Intel Clear" (font_size 8)))
