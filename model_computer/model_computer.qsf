@@ -100,3 +100,4 @@ set_location_assignment PIN_137 -to digitout[3]
 set_location_assignment PIN_139 -to digitout[2]
 set_location_assignment PIN_141 -to digitout[1]
 set_location_assignment PIN_142 -to digitout[0]
+set_global_assignment -name MIF_FILE standard_board_test.mif
